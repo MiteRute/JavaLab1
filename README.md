@@ -12,10 +12,24 @@
 
 Проєкт реалізує модель обробки фінансових операцій відповідно до парадигми Data-Oriented Programming:
 
-Дані відокремлені від поведінки та представлені незмінними записами (record). Ієрархія операцій обмежена інтерфейсом (sealed interface). Логіка обробки ізольована в сервісному класі TransactionProcessor. Структура проєкту ua.kpi.comsys.dop ├── Transaction.java # sealed interface ├── Deposit.java # record поповнення рахунку ├── Withdrawal.java # record зняття коштів ├── Transfer.java # record переказ між рахунками └── TransactionProcessor.java # обробка та форматування транзакцій
+Дані відокремлені від поведінки та представлені незмінними записами (record). Ієрархія операцій обмежена інтерфейсом (sealed interface). Логіка обробки ізольована в сервісному класі TransactionProcessor. 
 
-Збірка bash ./gradlew build
+Структура проєкту 
 
-Запуск тестів bash ./gradlew cleanTest test
+ua.kpi.comsys.dop 
+
+├── Transaction.java # sealed interface 
+
+├── Deposit.java # record поповнення рахунку 
+
+├── Withdrawal.java # record зняття коштів 
+
+├── Transfer.java # record переказ між рахунками 
+
+└── TransactionProcessor.java # обробка та форматування транзакцій
+
+Збірка ./gradlew build
+
+Запуск тестів ./gradlew cleanTest test
 
 Тестове покриття охоплює: успішне форматування кожного типу транзакції; обробку винятків для некоректних даних; валідацію вхідних даних.
