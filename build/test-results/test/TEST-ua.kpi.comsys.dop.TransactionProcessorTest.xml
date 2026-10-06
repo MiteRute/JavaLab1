@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ua.kpi.comsys.dop.TransactionProcessorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-06T00:35:25.200Z" hostname="ADMIN" time="0.038">
+  <properties/>
+  <testcase name="Transfer validation: invalid fields" classname="ua.kpi.comsys.dop.TransactionProcessorTest" time="0.015"/>
+  <testcase name="Should format Deposit correctly" classname="ua.kpi.comsys.dop.TransactionProcessorTest" time="0.011"/>
+  <testcase name="Should throw IllegalArgumentException when transaction is null" classname="ua.kpi.comsys.dop.TransactionProcessorTest" time="0.001"/>
+  <testcase name="Should format Transfer correctly" classname="ua.kpi.comsys.dop.TransactionProcessorTest" time="0.001"/>
+  <testcase name="Withdrawal validation: invalid fields" classname="ua.kpi.comsys.dop.TransactionProcessorTest" time="0.002"/>
+  <testcase name="Deposit validation: invalid amount or accountId" classname="ua.kpi.comsys.dop.TransactionProcessorTest" time="0.002"/>
+  <testcase name="Should format Withdrawal correctly" classname="ua.kpi.comsys.dop.TransactionProcessorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
